@@ -1,7 +1,11 @@
+import './Tours.css';
+
+
 function Tours(props){
+    let data=props.data
     return(
-        <>
-        {props.myData.map((item)=>{
+      <main>{
+        data.map((item)=>{
                 return (
                     <div key={item.id}>
                         <h3>{item.name}</h3>
@@ -9,8 +13,8 @@ function Tours(props){
                        
                     </div>
                 )
-            })}
-       </>
+            })
+        }</main>
     )
 }
 export default Tours;
