@@ -1,4 +1,28 @@
-.footer{
-    background :rgb(210, 128, 21);
-    display: flex;
+footer{
+  
+  margin:auto;
+  text-align: center;
+  display: flex;
+  background: #1abc9c;
+  font-size: 30px;
+  width: 100%;
+  height: auto;  
   }
+ 
+ 
+  footer p {
+    text-align: center;
+    color: rgb(190, 109, 86);
+}
+footer ul {
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+footer ul li {
+  display: flex;
+  text-decoration: none;
+  color: #80898f;
+}

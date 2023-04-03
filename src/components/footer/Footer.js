@@ -5,9 +5,14 @@ import  './Footer.css';
 function Footer(props){
     return(
         <footer>
-        <a href= "www.facebook.com">facebook </a>
-        <a href= "www.Instagram.com">Instagram </a>
-         <p> Sajeda Alrababah </p>
+            <ul>
+                <li><a href= "www.facebook.com">facebook </a></li>
+                <li><a href= "www.Instagram.com">Instagram </a></li>
+            </ul>
+        
+    
+        
+         <p>&copy; Copy Right Sajeda Alrababah </p>
         </footer>
     );
     }
