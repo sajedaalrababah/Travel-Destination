@@ -4,9 +4,9 @@ import './Header.css';
 function Header(props){
     return(
     
-    <Header>
+    <header>
     <h1> Travel Destination</h1>
-    </Header>
+    </header>
     );
     }
     export default Header;
