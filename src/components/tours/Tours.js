@@ -2,19 +2,14 @@ import './Tours.css';
 
 
 function Tours(props){
-    let data=props.data
     return(
-      <main>{
-        data.map((item)=>{
-                return (
-                    <div key={item.id}>
-                        <h3>{item.name}</h3>
-                        <img src={item.image} alt={item.name}></img>
-                       
-                    </div>
-                )
-            })
-        }</main>
+        <>
+      <main>
+        <h3>{props.name}</h3>
+        <img src={props.image} alt={props.name}></img>
+        </main>
+       
+        </>
     )
 }
 export default Tours;

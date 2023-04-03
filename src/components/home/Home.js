@@ -7,13 +7,20 @@ import Tours from "../tours/Tours";
 
 
 function Home (props){
-
-    return(
+    return(<>
+        <Header></Header>
         <div className='contain'>
-     <Header></Header>
-     <Tours data={props.data}></Tours>
-     <Footer></Footer>
+       
+          {
+            props.data.map((element)=>
+              <Tours name={element.name} image={element.image}  />
+            )
+          }
+        
      </div>
+
+     <Footer></Footer>
+     </>
     );
 }
 export default Home;
