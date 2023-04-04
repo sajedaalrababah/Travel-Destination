@@ -5,16 +5,15 @@ import Tours from "../tours/Tours";
 import data from '../../data/db.json';
 
 
-
 function Home (props){
     return(<>
          
         <div className='contain'>
         <Header></Header>
           {
-           data.map((element)=>
-              <Tours name={element.name} image={element.image}  />
-            )
+          data.map((element)=>(
+              <Tours name={element.name} image={element.image}  id={element.id} />
+            ))
           }
         
      </div>

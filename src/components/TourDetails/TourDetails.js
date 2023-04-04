@@ -1,10 +1,10 @@
+/* eslint-disable array-callback-return */
 import React from 'react';
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+
 import { useState } from "react"
 import { useParams } from 'react-router-dom';
-import cardData from "../../data/db.json";
-import Navbar from '../Navbar/Navbar';
+import data from '../../data/db.json';
+
 const TourDetails = () => {
     const { id } = useParams();
     const [seeMore, setSeeMore] = useState(false);
@@ -14,16 +14,17 @@ const TourDetails = () => {
       return (
 <>
       <section className="full">
-      <Header/>
-      <Navbar/>
+      
+      
       <div className="container">
                     {
-                cardData.map(element => {
+              data.map(element => {
                     const text = element.info;
+                    // eslint-disable-next-line eqeqeq
                     if (element.id == id) {
                         return (
                             <div>
-                            <img src={element.image} alt={element.name} style={{width :"50rem"}} />
+                            <img src={element.image} alt={element.name}  />
                             <h2>{element.name}</h2>
                             <h3>{seeMore ? text : `${text.substring(0, 300)}`}
                              <button className="btn" onClick={anather}>{seeMore? "See Less":"See More"}</button>
@@ -35,7 +36,7 @@ const TourDetails = () => {
                 })
             }
       </div>
-      <Footer/>
+      
 </section>
 </>
       )
