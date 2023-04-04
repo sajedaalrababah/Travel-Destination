@@ -1,15 +1,17 @@
 import './Tours.css';
+import Tour from "./tour/Tour";
+const Tours = (props) => {
 
 
-function Tours(props){
-    return(
-        <>
-      <main>
-        <h3>{props.name}</h3>
-        <img src={props.image} alt={props.name}></img>
-        </main>
-       
-        </>
-    )
+  return (
+    <>
+      <section className="tour section">
+        <div className="container">
+          <Tour name={props.name} image={props.image} id={props.id} />
+          
+        </div>
+      </section>
+    </>
+  );
 }
 export default Tours;

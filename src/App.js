@@ -1,13 +1,18 @@
-// import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
 import './App.css';
+
 import Home from './components/home/Home'
-let data= require('./data/db.json')
+import TourDetails from './components/TourDetails/TourDetails';
+
+
 function App() {
   return (
-
     <>
-    <Home data={data}/>
-    
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/city/:id" element={<TourDetails />} />
+    </Routes>
     </>
   );
 }

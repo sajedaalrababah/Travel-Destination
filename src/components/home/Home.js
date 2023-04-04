@@ -2,17 +2,17 @@ import './Home.css';
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Tours from "../tours/Tours";
-
+import data from '../../data/db.json';
 
 
 
 function Home (props){
     return(<>
-        <Header></Header>
+         
         <div className='contain'>
-       
+        <Header></Header>
           {
-            props.data.map((element)=>
+           data.map((element)=>
               <Tours name={element.name} image={element.image}  />
             )
           }
