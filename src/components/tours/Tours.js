@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Tours.css';
 import Tour from "./tour/Tour";
 const Tours = (props) => {
@@ -5,12 +6,19 @@ const Tours = (props) => {
 
   return (
     <>
-      <section className="tour section">
-        <div className="container">
-          <Tour name={props.name} image={props.image} id={props.id} />
-          
-        </div>
-      </section>
+     {
+      props.data.map(tour=>{
+        return(
+        <div key={tour.id }>
+          <Link to ={`/city/${tour.id}`}>
+            <Tour name={tour.name} image={tour.image}>
+            </Tour>
+          </Link>
+        </div>)
+      }
+
+      )
+     }
     </>
   );
 }

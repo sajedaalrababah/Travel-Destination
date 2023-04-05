@@ -1,4 +1,4 @@
-/* eslint-disable array-callback-return */
+
 import React from 'react';
 
 import { useState } from "react"
@@ -20,8 +20,8 @@ const TourDetails = () => {
                     {
               data.map(element => {
                     const text = element.info;
-                    // eslint-disable-next-line eqeqeq
-                    if (element.id == id) {
+                    
+                    if (element.id === id) {
                         return (
                             <div>
                             <img src={element.image} alt={element.name}  />
