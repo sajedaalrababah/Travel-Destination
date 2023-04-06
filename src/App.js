@@ -10,11 +10,14 @@ function App() {
   return (
     <>
    <Navbar></Navbar>
+   <div className='app' >
     <Routes>
       <Route exact path="/" element={<Home data={data}/>} />
       <Route path="/city/:id" element={<TourDetails />} />
     </Routes>
+    </div>
     </>
+  
   );
 }
 

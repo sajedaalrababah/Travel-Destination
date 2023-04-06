@@ -1,4 +1,4 @@
-
+import './TourDetails.css'
 import React from 'react';
 
 import { useState } from "react"
@@ -23,7 +23,7 @@ const TourDetails = () => {
                     
                     if (element.id === id) {
                         return (
-                            <div>
+                            <div className='card'>
                             <img src={element.image} alt={element.name}  />
                             <h2>{element.name}</h2>
                             <h3>{seeMore ? text : `${text.substring(0, 300)}`}

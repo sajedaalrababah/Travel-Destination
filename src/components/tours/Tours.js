@@ -9,7 +9,7 @@ const Tours = (props) => {
      {
       props.data.map(tour=>{
         return(
-        <div key={tour.id }>
+        <div key={tour.id } className='tour'>
           <Link to ={`/city/${tour.id}`}>
             <Tour name={tour.name} image={tour.image}>
             </Tour>

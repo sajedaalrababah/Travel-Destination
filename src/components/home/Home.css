@@ -1,5 +1,10 @@
-.contain{
+main {
     display: flex;
+    justify-content:space-between;
+    align-items: center;
     flex-wrap: wrap;
-    background-color: bisque;
+    gap: 10%;
+    margin: auto;
+    padding: 5%;
+    background-color:teal;
 }

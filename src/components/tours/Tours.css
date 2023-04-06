@@ -1,6 +1,6 @@
-main {
+.tour {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 10%;
@@ -10,7 +10,3 @@ main {
 
 
 
-main img{
-    width: 500px;
-    height: 500px;
-}

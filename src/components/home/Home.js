@@ -10,8 +10,9 @@ function Home (props){
          
         
         <Header></Header>
+        <main>
         <Tours data={props.data}></Tours>
-          
+        </main>
         
     
 
